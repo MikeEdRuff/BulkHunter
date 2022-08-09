@@ -56,7 +56,7 @@ namespace MagicTheGatheringDatabase
             string text = textBox1.Text;
             int i = 0;
 
-            
+
             while (i < CardNames.Count && CardNames[i].ToLower() != text.ToLower())
                 i++;
 
@@ -156,6 +156,22 @@ namespace MagicTheGatheringDatabase
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            while (i < CardNames.Count && CardNames[i].ToLower() != textBox1.Text.ToLower())
+                i++;
+            if (i < CardNames.Count)
+            {
+                StringBuilder builder = new StringBuilder();
+                builder.Append(Amount[i]);
+                builder.Append("\t");
+                builder.Append(CardNames[i]);
+                int index = ownedCardsListBox.FindString(builder.ToString());
+                ownedCardsListBox.SetSelected(index, true);
+            }
         }
     }
 }
