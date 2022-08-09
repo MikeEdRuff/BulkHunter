@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MagicTheGatheringDatabase",
+    "\\MagicTheGatheringDatabase\\MagicTheGatheringDatabase"
   ],
+  "SelectedNode": "\\MagicTheGatheringDatabase\\MagicTheGatheringDatabase\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

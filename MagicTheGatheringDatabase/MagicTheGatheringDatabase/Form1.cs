@@ -8,13 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Newtonsoft.Json;
 
 namespace MagicTheGatheringDatabase
 {
     public partial class Form1 : Form
     {
         List<string> CardNames;
+        List<string> CardNamesLower;
         List<int> Amount;
 
         AutoCompleteStringCollection source;
@@ -24,6 +24,7 @@ namespace MagicTheGatheringDatabase
             InitializeComponent();
 
             CardNames = new List<string>();
+            CardNamesLower = new List<string>();
             Amount = new List<int>();
 
             StreamReader streamReader = new StreamReader("cards.csv");
@@ -33,6 +34,7 @@ namespace MagicTheGatheringDatabase
             {
                 totalData = streamReader.ReadLine().Split(';');
                 CardNames.Add(totalData[0]);
+                CardNamesLower.Add(totalData[0].ToLower());
                 Amount.Add(Int32.Parse(totalData[1]));
             }
 
@@ -54,15 +56,11 @@ namespace MagicTheGatheringDatabase
         private void button1_Click(object sender, EventArgs e)
         {
             string text = textBox1.Text;
-            int i = 0;
+            int index = CardNamesLower.IndexOf(text.ToLower());
 
-
-            while (i < CardNames.Count && CardNames[i].ToLower() != text.ToLower())
-                i++;
-
-            if (i < CardNames.Count)
+            if (index != -1)
             {
-                Amount[i] += Int32.Parse(textBox2.Text);
+                Amount[index] += Int32.Parse(textBox2.Text);
                 redraw();
             }
             textBox1.Text = "";
@@ -98,15 +96,13 @@ namespace MagicTheGatheringDatabase
             if (selected != -1)
             {
                 string selectedString = ownedCardsListBox.Items[selected].ToString();
-                string[] cardName = selectedString.Split('\t');
+                string[] text = selectedString.Split('\t');
 
-                int i = 0;
-                while (i < CardNames.Count && CardNames[i].ToLower() != cardName[1].ToLower())
-                    i++;
+                int index = CardNamesLower.IndexOf(text[1].ToString().ToLower());
 
-                if (i < CardNames.Count)
+                if (index != -1)
                 {
-                    --Amount[i];
+                    --Amount[index];
                     redraw();
                 }
             }
@@ -118,15 +114,13 @@ namespace MagicTheGatheringDatabase
             if (selected != -1)
             {
                 string selectedString = ownedCardsListBox.Items[selected].ToString();
-                string[] cardName = selectedString.Split('\t');
+                string[] text = selectedString.Split('\t');
 
-                int i = 0;
-                while (i < CardNames.Count && CardNames[i].ToLower() != cardName[1].ToLower())
-                    i++;
+                int index = CardNamesLower.IndexOf(text[1].ToString().ToLower());
 
-                if (i < CardNames.Count)
+                if (index != -1)
                 {
-                    Amount[i] = 0;
+                    Amount[index] = 0;
                     redraw();
                 }
             }
@@ -160,18 +154,22 @@ namespace MagicTheGatheringDatabase
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int i = 0;
-            while (i < CardNames.Count && CardNames[i].ToLower() != textBox1.Text.ToLower())
-                i++;
-            if (i < CardNames.Count)
+            int index = CardNamesLower.IndexOf(textBox1.ToString().ToLower());
+            if (index != -1)
             {
                 StringBuilder builder = new StringBuilder();
-                builder.Append(Amount[i]);
+                builder.Append(Amount[index]);
                 builder.Append("\t");
-                builder.Append(CardNames[i]);
-                int index = ownedCardsListBox.FindString(builder.ToString());
-                ownedCardsListBox.SetSelected(index, true);
+                builder.Append(CardNames[index]);
+                int indexList = ownedCardsListBox.FindString(builder.ToString());
+                ownedCardsListBox.SetSelected(indexList, true);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 newForm = new Form2();
+            newForm.Show();
         }
     }
 }

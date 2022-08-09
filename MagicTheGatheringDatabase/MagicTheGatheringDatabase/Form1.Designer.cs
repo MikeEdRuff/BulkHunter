@@ -46,13 +46,13 @@
             this.ownedCardsListBox.FormattingEnabled = true;
             this.ownedCardsListBox.Location = new System.Drawing.Point(38, 62);
             this.ownedCardsListBox.Name = "ownedCardsListBox";
-            this.ownedCardsListBox.Size = new System.Drawing.Size(725, 342);
+            this.ownedCardsListBox.Size = new System.Drawing.Size(721, 329);
             this.ownedCardsListBox.TabIndex = 0;
             this.ownedCardsListBox.SelectedIndexChanged += new System.EventHandler(this.ownedCardsListBox_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(607, 33);
+            this.button1.Location = new System.Drawing.Point(603, 34);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -64,13 +64,13 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(84, 36);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(517, 20);
+            this.textBox1.Size = new System.Drawing.Size(513, 20);
             this.textBox1.TabIndex = 2;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // removeButton
             // 
-            this.removeButton.Location = new System.Drawing.Point(445, 415);
+            this.removeButton.Location = new System.Drawing.Point(441, 406);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(75, 23);
             this.removeButton.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             // removeAllButton
             // 
-            this.removeAllButton.Location = new System.Drawing.Point(526, 415);
+            this.removeAllButton.Location = new System.Drawing.Point(522, 406);
             this.removeAllButton.Name = "removeAllButton";
             this.removeAllButton.Size = new System.Drawing.Size(75, 23);
             this.removeAllButton.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(688, 415);
+            this.saveButton.Location = new System.Drawing.Point(684, 406);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 5;
@@ -127,16 +127,17 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(607, 415);
+            this.button2.Location = new System.Drawing.Point(603, 406);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 9;
             this.button2.Text = "Decklist";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(688, 33);
+            this.button3.Location = new System.Drawing.Point(684, 33);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 10;
