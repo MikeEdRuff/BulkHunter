@@ -1,0 +1,14 @@
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\bin\Debug\MagicTheGatheringDatabase.exe.config
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\bin\Debug\MagicTheGatheringDatabase.exe
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\bin\Debug\MagicTheGatheringDatabase.pdb
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\bin\Debug\Newtonsoft.Json.dll
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\bin\Debug\Newtonsoft.Json.xml
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\obj\Debug\MagicTheGatheringDatabase.csproj.AssemblyReference.cache
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\obj\Debug\MagicTheGatheringDatabase.csproj.SuggestedBindingRedirects.cache
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\obj\Debug\MagicTheGatheringDatabase.Properties.Resources.resources
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\obj\Debug\MagicTheGatheringDatabase.csproj.GenerateResource.cache
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\obj\Debug\MagicTheGatheringDatabase.csproj.CoreCompileInputs.cache
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\obj\Debug\MagicTheGatheringDatabase.csproj.CopyComplete
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\obj\Debug\MagicTheGatheringDatabase.exe
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\obj\Debug\MagicTheGatheringDatabase.pdb
+C:\Users\MikeEdDog\source\repos\MagicTheGatheringDatabase\MagicTheGatheringDatabase\obj\Debug\MagicTheGatheringDatabase.Form1.resources
