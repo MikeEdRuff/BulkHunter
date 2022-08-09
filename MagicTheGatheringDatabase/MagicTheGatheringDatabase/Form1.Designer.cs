@@ -48,7 +48,6 @@
             this.ownedCardsListBox.Name = "ownedCardsListBox";
             this.ownedCardsListBox.Size = new System.Drawing.Size(721, 329);
             this.ownedCardsListBox.TabIndex = 0;
-            this.ownedCardsListBox.SelectedIndexChanged += new System.EventHandler(this.ownedCardsListBox_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -66,7 +65,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(513, 20);
             this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // removeButton
             // 
@@ -105,7 +103,6 @@
             this.textBox2.Size = new System.Drawing.Size(40, 20);
             this.textBox2.TabIndex = 6;
             this.textBox2.Text = "1";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label1
             // 
@@ -119,7 +116,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 20);
+            this.label2.Location = new System.Drawing.Point(81, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 8;
@@ -163,8 +160,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ownedCardsListBox);
             this.Name = "Form1";
-            this.Text = "Magic the Gathering Database";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Bulk Hunter";
             this.ResumeLayout(false);
             this.PerformLayout();
 

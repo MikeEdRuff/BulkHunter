@@ -166,7 +166,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listBox1);
             this.Name = "Form2";
-            this.Text = "Magic the Gathering Database";
+            this.Text = "Bulk Hunter";
             this.ResumeLayout(false);
             this.PerformLayout();
 
