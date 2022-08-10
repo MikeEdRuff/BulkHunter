@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\MagicTheGatheringDatabase",
-    "\\MagicTheGatheringDatabase\\MagicTheGatheringDatabase"
+    "\\MagicTheGatheringDatabase\\MagicTheGatheringDatabase",
+    "\\MagicTheGatheringDatabase\\MagicTheGatheringDatabase\\bin",
+    "\\MagicTheGatheringDatabase\\MagicTheGatheringDatabase\\bin\\Debug",
+    "\\MagicTheGatheringDatabase\\MagicTheGatheringDatabase\\obj\\Debug"
   ],
   "SelectedNode": "\\MagicTheGatheringDatabase\\MagicTheGatheringDatabase\\Form1.cs",
   "PreviewInSolutionExplorer": false

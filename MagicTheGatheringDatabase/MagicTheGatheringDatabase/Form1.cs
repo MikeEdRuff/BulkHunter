@@ -152,8 +152,31 @@ namespace MagicTheGatheringDatabase
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form2 newForm = new Form2();
-            newForm.Show();
+            StringBuilder csv = new StringBuilder();
+
+            foreach (string[] cardData in cardDict.Values)
+            {
+                var newLine = string.Format("{0};{1}", cardData[0], cardData[1]);
+                csv.AppendLine(newLine);
+            }
+
+            File.WriteAllText("cards.csv", csv.ToString());
+            Form2 newForm = new Form2(cardDict);
+            if (newForm.ShowDialog() == DialogResult.OK)
+            {
+                cardDict.Clear();
+                StreamReader streamReader = new StreamReader("cards.csv");
+                string[] totalData = new string[File.ReadAllLines("cards.csv").Length];
+                totalData = streamReader.ReadLine().Split(';');
+                while (!streamReader.EndOfStream)
+                {
+                    totalData = streamReader.ReadLine().Split(';');
+                    string[] cardData = { totalData[0], totalData[1] };
+                    cardDict.Add(totalData[0].ToLower(), cardData);
+                }
+                redraw();
+            }
+            
         }
     }
 }
